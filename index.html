@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <div class="nav-left">
+            <button id="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">LearnHub</div>
+        </div>
+        <div class="nav-center">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for courses...">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="nav-button">Sign In</button>
+            <button class="nav-button primary">Sign Up</button>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Categories</h2>
+            <button id="close-sidebar" class="close-button">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" data-category="all" class="active">All Courses</a></li>
+            <li><a href="#" data-category="programming">Programming</a></li>
+            <li><a href="#" data-category="data-science">Data Science</a></li>
+            <li><a href="#" data-category="web">Web Development</a></li>
+            <li><a href="#" data-category="mobile">Mobile Development</a></li>
+            <li><a href="#" data-category="ml">Machine Learning</a></li>
+            <li><a href="#" data-category="business">Business</a></li>
+            <li><a href="#" data-category="design">Design</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <h1>Learn Without Limits</h1>
+            <p>Start, switch, or advance your career with thousands of courses from our expert instructors.</p>
+        </div>
+
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-grid" id="courseGrid">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
